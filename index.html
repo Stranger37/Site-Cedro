@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!--Compatibilidade com telas diferentes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Compatibilidade IE-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cedro Casa Decor</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="icon" type="image/png" href="imagens/icones/logo-icone.png">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/inicio.css">
+    <script src="js/carrossel.js"></script>
+    <script src="js/imagem-padrao.js"></script>
+</head>
+<body>
+    <!--Cabeçalho do site-->
+    <header>
+
+        <!--Logo do site-->
+        <div class="logo">
+            <a href="#"><img src="imagens/logo.png" alt="Logo Cedro Casa Decor"></a>
+            <div src="texto-logo">
+                <a href="#"><h1>Cedro</h1></a>
+                <a href="#"><p>CASA DECOR</p></a>
+            </div>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="menu-navegacao">
+            <div class="icone-menu-navegacao">
+                <a href="#"><img src="imagens/icones/pagina-inicial-icone-preenchido.png" alt="Icone Inicio"></a>
+                <a href="#">Início</a>
+            </div>
+            <div class="icone-menu-navegacao">
+                <a href="produtos.html"><img src="imagens/icones/pagina-de-produtos-icone-preenchido.png" alt="Icone Produtos"></a>
+                <a href="produtos.html">Produtos</a>
+            </div>
+            <div class="icone-menu-navegacao">
+                <a href="sobre.html"><img src="imagens/icones/sobre-icone-preenchido.png" alt="Icone Sobre"></a>
+                <a href="sobre.html">Sobre</a>
+            </div>
+            <div class="icone-menu-navegacao">
+                <a href="contato.html"><img src="imagens/icones/contato-icone-preenchido.png" alt="Icone Contato"></a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+
+        <!--Area do Usuário-->
+        <div class="area-usuario">
+
+            <div class="carrinho">
+                    <img src="imagens/icones/adicionar-ao-carrinho-icone.png" alt="Icone Carrinho">
+                    <p>Carrinho</p>
+            </div>
+
+            <div class="login">
+                    <img src="imagens/icones/usuario-icone-preenchido.png" alt="Icone Usuario">
+                    <p>Login</p>
+            </div>
+            
+        </div>
+    </header>
+
+    <!--Banner Carrossel-->
+    <section class="carrossel">
+        <div class="carrossel-container">
+            <div class="carrossel-slide ativo">
+                <img src="imagens/banner/banner-contemporaneo.png" alt="Banner 1">
+            </div>
+            <div class="carrossel-slide">
+                <img src="imagens/banner/banner-organico.png" alt="Banner 2">
+            </div>
+            <div class="carrossel-slide">
+                <img src="imagens/banner/banner-neo-classico.png" alt="Banner 3">
+            </div>
+            <div class="carrossel-slide">
+                <img src="imagens/banner/banner-moderno.png" alt="Banner 4">
+            </div>
+            <div class="carrossel-slide">
+                <img src="imagens/banner/banner-compacto.png" alt="Banner 5">
+            </div>
+        </div>
+        <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moverSlide(1)">&#10095;</button>
+    </section>
+
+    <div class="fundo">
+        <!--Sessão Apresentação dos Estilos-->
+        <div class="titulo-apresentacao-estilos">
+            <h1>Escolha o Estilo que Combina com Você</h1>
+        </div>
+        <section class="container-estilos">
+
+            <!--APRESENTAÇÃO ESTILO CONTEMPORANEO-->
+            <div class="cartao-estilo">
+                <img src="imagens/produtos/contemporaneo/contemporaneo-descricao.png" alt="Imagem Exemplo Estilo Contemporâneo">
+                <div class="info-estilo">
+                    <div>
+                        <div class="titulo-estilo">
+                            <h2>Contemporâneo: Elegância e Funcionalidade</h2>
+                        </div>
+                        <div class="descricao-estilo">
+                            <p>
+                                O estilo contemporâneo é a união perfeita entre estética e funcionalidade,
+                                criando ambientes sofisticados, acolhedores e atemporais. Com linhas elegantes e um design pensado para o conforto,
+                                ele valoriza espaços amplos, equilibrando simplicidade e sofisticação em cada detalhe.<br><br>
+                                Os materiais são um dos grandes destaques desse estilo. Tecidos como o linho e o veludo trazem suavidade e aconchego,
+                                enquanto a presença de madeira natural, metal e vidro adiciona um toque moderno e sofisticado. 
+                                A paleta de cores neutras, frequentemente complementada por tons terrosos ou detalhes metálicos, 
+                                reforça a sensação de harmonia e equilíbrio visual.<br><br> Além da estética refinada, o estilo contemporâneo prioriza 
+                                a funcionalidade. Cada peça é projetada para proporcionar conforto sem abrir mão do design, 
+                                garantindo que os espaços sejam bem aproveitados e transmitem uma sensação de leveza. 
+                                Com formas bem definidas e acabamentos de alta qualidade, esse estilo transforma qualquer ambiente em um 
+                                refúgio de elegância e bem-estar.<br><br> Se você busca um espaço que combine sofisticação, 
+                                conforto e praticidade, o estilo contemporâneo é a escolha ideal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-ver-mais">
+                        <button class="ver-mais" onclick="window.location.href='produtos.html'">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+            <!--APRESENTAÇÃO ESTILO ORGANICO-->
+            <div class="cartao-estilo inverso">
+                <img src="imagens/produtos/organico/organico-descricao.png" alt="Imagem Exemplo Estilo Orgânico">
+                <div class="info-estilo">
+                    <div>
+                        <div class="titulo-estilo">
+                            <h2>Orgânico: Formas Fluidas e Conforto Natural</h2>
+                        </div>
+                        <div class="descricao-estilo">
+                            <p>
+                                O estilo orgânico de móveis se destaca por suas formas suaves e fluídas, criando um ambiente acolhedor 
+                                e sofisticado. Inspirado na natureza, esse design elimina linhas rígidas e prioriza curvas envolventes, 
+                                proporcionando uma sensação de movimento e leveza no espaço.<br><br>
+                                Os materiais e tecidos são cuidadosamente escolhidos para garantir conforto e aconchego, 
+                                como estofados macios em tons neutros e texturas que remetem à natureza. A paleta de cores suaves, 
+                                como off-white, bege e tons terrosos, reforça a tranquilidade e a harmonia do ambiente.<br><br>
+                                Essa abordagem combina estética e funcionalidade, criando móveis versáteis que se adaptam ao espaço 
+                                e promovem bem-estar. O estilo orgânico é ideal para quem busca um refúgio de serenidade dentro de casa, 
+                                onde o design convida ao relaxamento e à contemplação.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-ver-mais">
+                        <button class="ver-mais" onclick="window.location.href='produtos.html'">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+            <!--APRESENTAÇÃO ESTILO NEO CLASSICO-->
+            <div class="cartao-estilo">
+                <img src="imagens/produtos/neo-classico/neo-classico-descricao.png" alt="Imagem Exemplo Estilo Neo Classico">
+                <div class="info-estilo">
+                    <div>
+                        <div class="titulo-estilo">
+                            <h2>Neoclássico: Elegância Atemporal e Refinamento</h2>
+                        </div>
+                        <div class="descricao-estilo">
+                            <p>
+                                O estilo Neoclássico de móveis exala uma sofisticação discreta e atemporal, resgatando a grandiosidade 
+                                da Grécia e Roma antigas com um toque contemporâneo. Caracterizado por linhas simétricas e formas harmoniosas, 
+                                esse estilo une o clássico ao moderno, criando um ambiente de equilíbrio e requinte.<br><br>
+                                Os móveis são cuidadosamente elaborados com acabamentos luxuosos, como madeira entalhada, detalhes em 
+                                dourado e estofados em tecidos nobres, que garantem conforto e elegância. A paleta de cores sóbrias, com 
+                                tons neutros e acentuada por detalhes em dourado ou prata, reforça a sensação de sofisticação e frescor.<br><br>
+                                Esse estilo combina a beleza das formas clássicas com a funcionalidade dos tempos modernos, proporcionando 
+                                móveis que transmitem um ar de grandeza sem perder a praticidade. O estilo Neoclássico é ideal para quem deseja 
+                                um ambiente refinado, onde a história e a modernidade se encontram em perfeita harmonia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-ver-mais">
+                        <button class="ver-mais" onclick="window.location.href='produtos.html'">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+            <!--APRESENTAÇÃO ESTILO MODERNO-->
+            <div class="cartao-estilo inverso">
+                <img src="imagens/produtos/moderno/moderno-descricao.png" alt="Imagem Exemplo Estilo Moderno">
+                <div class="info-estilo">
+                    <div>
+                        <div class="titulo-estilo">
+                            <h2>Moderno: Sofisticação Minimalista e Funcionalidade</h2>
+                        </div>
+                        <div class="descricao-estilo">
+                            <p>
+                                O estilo Moderno de móveis se destaca pela simplicidade elegante e pelo design funcional, criando 
+                                ambientes sofisticados sem excessos. Com linhas retas, formas geométricas e uma abordagem minimalista, 
+                                esse estilo valoriza a estética clean e a praticidade no dia a dia.<br><br>
+                                Os materiais são escolhidos para garantir durabilidade e conforto, como madeira, vidro, metal e estofados 
+                                de alta qualidade. A paleta de cores neutras, com tons como branco, cinza e preto, é frequentemente 
+                                combinada com detalhes contrastantes para adicionar personalidade ao espaço.<br><br>
+                                Essa abordagem une design e utilidade, resultando em móveis versáteis e adaptáveis a diferentes 
+                                ambientes. O estilo Moderno é ideal para quem busca sofisticação aliada à funcionalidade, 
+                                criando espaços contemporâneos e equilibrados, onde menos é mais.<br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-ver-mais">
+                        <button class="ver-mais" onclick="window.location.href='produtos.html'">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+            <!--APRESENTAÇÃO ESTILO COMPACTO-->
+            <div class="cartao-estilo">
+                <img src="imagens/produtos/compacto/compactos-descricao.png" alt="Imagem Exemplo Estilo Compacto">
+                <div class="info-estilo">
+                    <div>
+                        <div class="titulo-estilo">
+                            <h2>Compacto: Inteligência Espacial e Conforto</h2>
+                        </div>
+                        <div class="descricao-estilo">
+                            <p>
+                                O estilo Compacto de móveis é pensado para otimizar espaços sem abrir mão do conforto e da estética. 
+                                Com um design funcional e versátil, esse estilo valoriza peças multifuncionais e layouts bem planejados, 
+                                tornando qualquer ambiente mais prático e organizado.<br><br>
+                                Os materiais e acabamentos são escolhidos para proporcionar leveza visual e durabilidade, 
+                                com opções como madeira, metal e estofados confortáveis. A paleta de cores neutras e suaves contribui 
+                                para a sensação de amplitude, enquanto detalhes estratégicos trazem personalidade ao espaço.<br><br>
+                                Essa abordagem une praticidade e aconchego, criando móveis que se adaptam às necessidades do 
+                                dia a dia sem comprometer o estilo. O estilo Compacto é ideal para quem busca soluções inteligentes 
+                                para ambientes menores, garantindo funcionalidade e bem-estar.<br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-ver-mais">
+                        <button class="ver-mais" onclick="window.location.href='produtos.html'">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+
+    <!--Rodapé-->
+    <footer >
+        <div>
+            <p>&copy; 2025 Cedro Casa Decor. Todos os direitos reservados.</p>
+        </div>
+        <div class="links">
+            <a href="https://api.whatsapp.com/send?phone=554439003344" target="_blank"><img src="imagens/icones/whatsapp-icone-preenchido-dourado.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/cedrocasadecor/" target="_blank"><img src="imagens/icones/instagram-icone-preenchido-dourado.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

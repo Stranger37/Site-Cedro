@@ -1,0 +1,41 @@
+/*------------------------------ORGANIZAÇÃO DO RODAPÉ DA PÁGINA------------------------------*/
+       /*Organiza as divisões dentro do Rodapé da Pagina (Direitos reservados, Links)*/
+
+/*Organização do itens dentro do rodapé lado à lado e com o espaçamento correto*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid var(--cor-icones);
+}
+
+    /*---------------DIVISÃO: LINKS---------------*/
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/*Estilização da Imagem dentro do Link (Tamanho, Margem)*/
+footer img {
+    width: 50px;
+    height: auto;
+    margin-right: 30px;
+    margin-left: -10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/*Estilização do Link (Decoração)*/
+footer a {
+    text-decoration: none;
+}
+

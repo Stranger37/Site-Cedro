@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <!--Compatibilidade com telas diferentes-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Compatibilidade IE-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cedro Casa Decor</title>
+        <!-- Link para o arquivo CSS -->
+        <link rel="icon" type="image/png" href="imagens/icones/logo-icone.png">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/produtos.css">
+        <script src="js/imagem-padrao.js"></script>
+    </head>
+<body>
+    <!--Cabeçalho do site-->
+    <header>
+        <!--Logo do site-->
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logo.png" alt="Logo Cedro Casa Decor"></a>
+            <div src="texto-titulo">
+                <a href="index.html"><h1>Cedro</h1></a>
+                <a href="index.html"><p>CASA DECOR</p></a>
+            </div>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="menu-navegacao">
+            <div class="icone-menu-navegacao">
+                <a href="index.html"><img src="imagens/icones/pagina-inicial-icone-preenchido.png" alt="Icone Inicio"></a>
+                <a href="index.html">Início</a>
+            </div>
+            <div class="icone-menu-navegacao">
+                <a href="#"><img src="imagens/icones/pagina-de-produtos-icone-preenchido.png" alt="Icone Produtos"></a>
+                <a href="#">Produtos</a>
+            </div>
+            <div class="icone-menu-navegacao">
+                <a href="sobre.html"><img src="imagens/icones/sobre-icone-preenchido.png" alt="Icone Sobre"></a>
+                <a href="sobre.html">Sobre</a>
+            </div>
+            <div class="icone-menu-navegacao">
+                <a href="contato.html"><img src="imagens/icones/contato-icone-preenchido.png" alt="Icone Contato"></a>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+
+        <!--Area do Usuário-->
+        <div class="area-usuario">
+
+            <div class="carrinho">
+                    <img src="imagens/icones/adicionar-ao-carrinho-icone.png" alt="Icone Carrinho">
+                    <p>Carrinho</p>
+            </div>
+
+            <div class="login">
+                    <img src="imagens/icones/usuario-icone-preenchido.png" alt="Icone Usuario">
+                    <p>Login</p>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="fundo">
+        <!--Barra lateral e Cartão de Produtos-->
+        <div class="estrutura-corpo">
+            <aside class="barra-lateral">
+                <ul>
+                    <li><a href="#">Sofás</a></li>
+                    <li><a href="#">Poltronas</a></li>
+                    <li><a href="#">Puffs</a></li>
+                    <li><a href="#">Ilhas</a></li>
+                </ul>   
+            </aside>
+            <div class="pesquisa-cartoes">
+                <div class="barra-pesquisa">
+                    <input type="text" placeholder="Buscar produtos..." id="inputPesquisa">
+                    <button id="botaoPesquisa" onclick="pesquisar()">
+                        <img src="imagens/icones/pesquisa-icone-preenchido.png" alt="Icone Pesquisa">
+                    </button>
+                </div>
+
+                <!--Painel de amostra dos Produtos-->
+                <section class="sessao-de-produtos">
+
+                    <!--Cartao individual do Produto-->
+                    <div class="cartao-do-produto">
+                        <div class="conteudo-cartao">
+                            <div class="container-imagem-nome">
+                                <img src="imagens/produtos/contemporaneo/empireo/empireo-1.png" alt="Sofa Empireo">
+                                <div class="container-nome-preco">
+                                    <h3 class="titulo-produto">Sofá Empíreo</h3>
+                                    <p class="preco">R$ 99,99</p>
+                                </div>
+                                <p class="descricao">Conforto que eleva seu espaço a um nível superior.</p>
+                            </div>
+                        </div>
+                        <div class="botoes-acao">
+                            <button class="ver-produto">Ver...</button>
+                            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!--Cartao individual do Produto-->
+                    <div class="cartao-do-produto">
+                        <div class="conteudo-cartao">
+                            <div class="container-imagem-nome">
+                                <img src="imagens/produtos/contemporaneo/portinari/portinari-2.png" alt="Ilha Portinari">
+                                <div class="container-nome-preco">
+                                    <h3 class="titulo-produto">Ilha Portinari</h3>
+                                    <p class="preco">R$ 159,99</p>
+                                </div>
+                                <p class="descricao">A ilha perfeita de conforto para seu refúgio.</p>
+                            </div>
+                        </div>
+                        <div class="botoes-acao">
+                            <button class="ver-produto">Ver...</button>
+                            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!--Cartao individual do Produto-->
+                    <div class="cartao-do-produto">
+                        <div class="conteudo-cartao">
+                            <div class="container-imagem-nome">
+                                <img src="imagens/produtos/contemporaneo/torin/torin-1.png" alt="Sofa Torin">
+                                <div class="container-nome-preco">
+                                    <h3 class="titulo-produto">Sofá Torin</h3>
+                                    <p class="preco">R$ 139,99</p>
+                                </div>
+                                <p class="descricao">A harmonia entre inovação e exclusividade.</p>
+                            </div>
+                        </div>
+                        <div class="botoes-acao">
+                            <button class="ver-produto">Ver...</button>
+                            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!--Cartao individual do Produto-->
+                    <div class="cartao-do-produto">
+                        <div class="conteudo-cartao">
+                            <div class="container-imagem-nome">
+                                <img src="" alt="Teste 1">
+                                <div class="container-nome-preco">
+                                    <h3 class="titulo-produto">Teste 1</h3>
+                                    <p class="preco">R$ 00,00</p>
+                                </div>
+                                <p class="descricao">...</p>
+                            </div>
+                        </div>
+                        <div class="botoes-acao">
+                            <button class="ver-produto">Ver...</button>
+                            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                    <!--Cartao individual do Produto-->
+                    <div class="cartao-do-produto">
+                        <div class="conteudo-cartao">
+                            <div class="container-imagem-nome">
+                                <img src="" alt="Teste 2">
+                                <div class="container-nome-preco">
+                                    <h3 class="titulo-produto">Teste 2</h3>
+                                    <p class="preco">R$ 00,00</p>
+                                </div>
+                                <p class="descricao">...</p>
+                            </div>
+                        </div>
+                        <div class="botoes-acao">
+                            <button class="ver-produto">Ver...</button>
+                            <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!--Rodapé-->
+    <footer >
+        <div>
+            <p>&copy; 2025 Cedro Casa Decor. Todos os direitos reservados.</p>
+        </div>
+        <div class="links">
+            <a href="https://api.whatsapp.com/send?phone=554439003344" target="_blank"><img src="imagens/icones/whatsapp-icone-preenchido-dourado.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/cedrocasadecor/" target="_blank"><img src="imagens/icones/instagram-icone-preenchido-dourado.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

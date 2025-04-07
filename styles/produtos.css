@@ -1,0 +1,234 @@
+/*Importa Variaveis*/
+@import url("global.css");
+
+/*------------------------------ORGANIZAÇÃO DA PAGINA INICIAL------------------------------*/
+    /*Organiza as divisões dentro da Pagina Produtos (Estrutura Corpo)*/
+    
+
+
+    /*---------------DIVISÃO: ESTRUTURA CORPO---------------*/
+/*Organiza a estrutura do corpo da página, para que a Sub-Divisão: 'Barra Lateral' fique à esquerda, e 
+as Sub-Divisões: 'Barra de Pesquisa' e 'Painel de Produtos' dividam o espaço restante à direita da página*/
+
+/*Organiza o espaço da página entre Barra Lateral e Painel*/
+.estrutura-corpo {
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr;
+    margin: 0;
+}
+
+/*-----SUB-DIVISÃO: BARRA LATERAL-----*/
+
+/*Estilização da Barra Lateral (Tamanho, Fundo, Margens)*/
+.barra-lateral {
+    max-height: 100%;
+    height: 100%;
+    background-color: var(--cor-fundo-secundário);
+    top: 0;
+    left: 0;
+    margin-top: -20px;
+    padding: 20px;
+}
+
+/*Estilização da Lista dentro da Barra Lateral*/
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*Estilização dos itens da Lista (Margem)*/
+.barra-lateral ul li {
+    margin: 15px 0;
+}
+
+/*Estilização dos Links em cada item da Lista (Decoração, Cor, Espaço Ocupado, Bordas e Trasição)*/
+.barra-lateral ul li a {
+    text-decoration: none;
+    color: var(--cor-titulos);
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+/*Estilização do Hover dos links nos itens da lista*/
+.barra-lateral ul li a:hover {
+    background: var(--cor-fundo-principal);
+}
+
+/*-----SUB-DIVISÃO: BARRA DE PESQUISA-----*/
+/*Oraniza a Barra de Tarefas e o Painel de Produtos em coluna (Um acima do Outro)*/
+
+/*Organiza a Barra de Pesquisa e o Painel de Produtos dentro do Container*/
+.pesquisa-cartoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Estilização da Barra de Pesquisa (Display, Alinhamento dos itens, Margem, Tamanho, Fundo, Bordas)*/
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+    border: 2px solid var(--cor-icones);
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: var(--cor-fundo-secundário);
+}
+
+/*Estilização do Input da barra de Pesquisa (Fonte, Cor, Fundo, Tamanho, Bordas, Posicionamento)*/
+.barra-pesquisa input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: var(--cor-fundo-secundário);
+    color: var(--cor-texto-principal);
+}
+
+/*Estiliazação do Botão de pesquisa da Barra (Fundo, Bordas, Tamanho, Cursor, Fonte)*/
+.barra-pesquisa button {
+    background-color: var(--cor-fundo-secundário);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: var(--cor-fundo-secundário);
+    font-size: 16px;
+}
+
+/*Estiliazação do Icone de Pesquisa dentro do Botão (Tamanho, posicionamento)*/
+.barra-pesquisa img {
+    width: 45px;
+    height: auto;
+    margin-top: -15px;
+    margin-right: -18px;
+    margin-bottom: -16px;
+}
+
+/*-----SUB-DIVISÃO: PAINEL DE PRODUTOS-----*/
+/*Organiza os cartões de Produto lado à lado no máximo de 4 cartões por linha*/
+.sessao-de-produtos {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/*Conteudo do cartão (Imagem, Tituto-Produto, Preço e Descrição)*/
+.conteudo-cartao {
+    padding: 10px;
+}
+
+/*Estilização do Cartão (Como as informações ficam organizadas dentro do cartão)*/
+.cartao-do-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: color-mix(in srgb, var(--cor-fundo-secundário) 50%, transparent);
+    border-radius: 10px;
+    width: 250px;
+    max-height: 300px;
+    text-align: center;
+}
+
+/*Estilização da Imagem (Tamanho, bordas, cor de fundo)*/
+.cartao-do-produto img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+    background-color: var(--cor-texto-principal);
+    border: var(--borda);
+}
+
+/*Organização do nome do produto em relação a imagem*/
+/*A ideia é manter um abaixo do outro*/
+.container-imagem-nome{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+/*Organização do preço em relação ao nome*/
+/*Dessa forma ambos estarão abaixo da imagem, um ao lado do outro*/
+.container-nome-preco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    margin: 0px
+}
+
+/*Estilização do nome do produto (Cor, Fonte, Tamanho, Alinhamento, Posicionamento)*/
+.titulo-produto {
+    color: var(--cor-icones);
+    margin: 10px;
+}
+
+/*Estilização do preço do produto (Cor, Fonte, Tamanho, Alinhamento, Posicionamento)*/
+.preco {
+    color: #c69c6d;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*Estilização da descrição do produto (Cor, Fonte, Tamanho, Alinhamento, Posicionamento)*/
+.descricao {
+    margin-top: -10px;
+    color: var(--cor-texto-principal);
+    text-align: left;
+    font-size: 0.9em;
+    height: 30px;
+    overflow: hidden;
+}
+
+/*Organização dos Botões de Ação na base do cartão*/
+/*Para que fiquem lado a lado e ocupem todo o espaço de uma lateral à outra*/
+.botoes-acao {
+    display: flex;
+    width: 100%;
+}
+
+/*Estilização dos Botões (Organização no Flex, Posicionamento, Cursor, Bordas, Fonte e Cor da Fonte)*/
+.botoes-acao button {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    font-size: 0.8em;
+    height: 30px;
+}
+
+/*Estilização do Botão Ver Produto (Cor)*/
+.ver-produto {
+    background-color: #b8a58c;
+    color: #4d3b2d;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 1px;
+}
+
+/*Estilização do Botão Adicionar ao Carrinho (Cor)*/
+.adicionar-carrinho {
+    background-color: var(--cor-botao-acao);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 1px;
+}
+
+/*Estilização do Botão ver Produto quando o Mouse Sobrepor (Cor)*/
+.ver-produto:hover {
+    background-color: var(--cor-titulos);
+}
+
+/*Estilização do Botão Adicionar ao Carrinho quando o Mouse Sobrepor (Cor)*/
+.adicionar-carrinho:hover {
+    background-color: var(--cor-botao-acao-claro);
+}

@@ -1,0 +1,180 @@
+/*------------------------------ORGANIZAÇÃO DA PAGINA INICIAL------------------------------*/
+ /*Organiza as divisões dentro da página inicial (Carrossel, Apresentação)*/
+
+    /*---------------DIVISÃO: CARROSSEL---------------*/
+    /*Organiza as Sub-Divisões dentro do Carrossel e Estiliza*/
+
+/*Define o Carrossel e determina suas características (Posicionamento, Tamanho, Margens)*/
+/*Este container vai armazenar o container de imagens e os botões next e prev*/
+.carrossel {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/*Organiza e estiliza os itens dentro do container dos Slides (Display, Tamanho, Transição)*/
+.carrossel-container {
+    display: flex;
+    width: 100vw;
+    transition: transform 0.5s ease-in-out;
+}
+
+/*Estiliza o container Slide (Onde a imagem ficará) e define Tamanho Mínimo*/
+.carrossel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+/*Estiliza a Imagem dentro do Slide (Tamanho, Altura Máxima, Posicionamento, Bordas, Display e Encaixe do Objeto)*/
+.carrossel-slide img {
+    width: 100%;
+    max-height: 600px;
+    display: block;
+    object-fit: cover;
+    object-position: 50% 75%;
+    border-bottom: 2px solid var(--cor-icones);
+}
+
+/*Estiliza os Botões Prev e Next (Posicionamento, Cor, Fundo, Fonte, Tamando, Cursor Bordas e Define como será feita a Transição)*/
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    color: var(--cor-texto-principal);
+    font-size: 24px;
+    background-color: rgba(198, 156, 109, 0.5);
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+/*Posiciona o Botão prev à esquerda da Página*/
+.prev {
+    left: 10px;
+}
+
+/*Posiciona o Botão next à direita da Página*/
+.next {
+    right: 30px;
+}
+
+    /*---------------DIVISÃO: APRESENTAÇÃO---------------*/
+    /*Organiza as Sub-Divisões dentro de Apresentação (Título Apresentação e Apresentação)*/
+
+/*-----SUB-DIVISÃO: TITULO APRESENTAÇÃO-----*/
+
+/*Estiliza o Texto dentro do Container (Alinhamento, Cor e Fonte)*/
+.titulo-apresentacao-estilos {
+    text-align: center;
+    color: var(--cor-titulos);
+    font-family: var(--fonte-principal);
+}
+
+/*Organização do Título para estilização com linhas laterais (Display e Alinhamento dos elementos)*/
+.titulo-apresentacao-estilos h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Estilização Antes e após o Texto criando uma linha (Espaço ocupado, Tamanho, Margem e Cor)*/
+.titulo-apresentacao-estilos h1::before, .titulo-apresentacao-estilos h1::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background: var(--cor-icones);
+    margin: 0 10px;
+}
+
+/*-----SUB-DIVISÃO: APRESENTAÇÃO DE ESTILOS-----*/
+/*Organiza os Containers dentro da Sub-Divisão*/
+
+/*Organiza os cartões de estilo um acima do outro dentro do container*/
+.container-estilos {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Organiza as divisões internas de informações em linha (Imagem e Informações) lado a lado*/
+.cartao-estilo {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-around;
+    text-align: justify;
+    margin: 15px;
+    border: 2px solid var(--cor-icones);
+    background-color: color-mix(in srgb, var(--cor-fundo-secundário) 50%, transparent);
+    color: var(--cor-texto-principal);
+    border-radius: 5px;
+}
+
+/*Estização da Imagem do cartão de Apresentação (Tamanho, bordas, Sombra, Margem)*/
+.cartao-estilo img {
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+    border: var(--borda);
+    box-shadow: 3px 3px 10px rgba(252, 209, 135, 0.5);
+    margin: 15px;
+}
+
+/*Organiza os itens em coluna Título, Descrição e Botão Ver Mais*/
+.info-estilo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Estilização do Título do Cartão de Estilo (Alinhamento, Fonte, Cor, Tamanho, Margem, Gap)*/
+.titulo-estilo h2{
+    text-align: center;
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto-principal);
+    font-size: 2em;
+    margin-top: 10px;
+    gap: 25px
+}
+
+/*Estilização da Descrição do Estilo (Fonte, Cor, Tamanho, Margem, Posicionamento)*/
+.descricao-estilo p {
+    font-family: arial, serif;
+    color: var(--cor-texto-principal);
+    font-size: 1em;
+    margin: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*Organiza o Botão Ver mais dentro do container (Display, Posicionamente dentro do Cartão, Direcionamento, Alinhamento, Margem)*/
+.container-ver-mais {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/*Estilização do Botão Ver Mais (Fundo, Cor da Fonte, Padding, Bordas, Cursor, Margem)*/
+.ver-mais {
+    background-color: color-mix(in srgb, var(--cor-icones) 50%, transparent);
+    color: var(--cor-texto-principal);
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/*Estilização do Hover do Botão Ver Mais*/
+.ver-mais:hover {
+    background-color: var(--cor-titulos);
+    color: var(--cor-texto-principal);
+}
+
+/*Inverte as informações dos Cartões com esta classe em linha (Texto e botão ficam à esquerda e imagem à direita)*/
+.inverso {
+    flex-direction: row-reverse;
+}

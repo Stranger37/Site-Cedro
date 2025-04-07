@@ -1,0 +1,12 @@
+:root {
+    --fonte-principal: 'Prettywise Light', sans-serif;
+    --fonte-textos: 'Rotunda Thin', sans-serif;
+    --cor-fundo-principal: #000000;
+    --cor-fundo-secundário: #333333;
+    --cor-titulos: #f6d494;
+    --cor-texto-principal: #ffffff;
+    --cor-icones: #c69c6d;
+    --cor-bordas: #e0e0e0;
+    --cor-botao-acao: #28a745;
+    --borda: 2px solid black;
+}

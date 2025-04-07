@@ -1,0 +1,275 @@
+/*------------------------------ORGANIZAÇÃO DA PAGINA SOBRE------------------------------*/
+    /*Organiza as divisões dentro da página inicial (Banner, Painel Sobre, )*/
+
+@import url("global.css");
+
+    /*---------------DIVISÃO: BANNER---------------*/
+    /*Organiza e Estiliza os itens dentro do Banner*/
+
+/*Organização do conteudo do Banner*/
+.banner {
+    position: relative;
+    background: url("../imagens/banner/pagina-sobre/paisagem.png") no-repeat center/cover;
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid var(--cor-icones)
+}
+
+/*Estilização e Posicionamento do Texto no Banner*/
+.titulo-banner {
+    font-family:'Times New Roman', Times, serif;
+    color: var(--cor-texto-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    margin: 0;
+}
+
+/*Estilização do Titulo*/
+.banner h1 {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 8em;
+}
+
+/*Estilização do Subtítulo*/
+.banner h2 {
+    margin: 0;
+    margin-left: 30px;
+    font-size: 2em;
+}
+
+    /*---------------DIVISÃO: PAINEL SOBRE---------------*/
+    /*Organiza as Sub-diviões Inicio, Valores, Diferenciais, Depoimentos e Contato*/
+
+/*Organiza em Grid o conteúdo da Página, para gerar dinamismo com tamanhos diferentes de cartões de informação*/
+.painel-sobre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    width: 100vw;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    margin-left: 20px;
+    border-bottom: 2px solid black;
+}
+
+.inicio img {
+    height: 200px;
+    width: auto;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--cor-icones);
+}
+
+.info-inicio {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-texto-principal);
+}
+
+.titulo-inicio {
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-principal);
+}
+
+.paragrafo-inicio {
+    width: 100%;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.paragrafo-inicio p {
+    margin: 0;
+}
+
+.valores {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid black;
+}
+
+.categoria h2 {
+    text-align: center;
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto-principal);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.categoria h4::before {
+    flex-grow: 1;
+    content: "✧";
+    margin: 5px;
+}
+
+.categoria h4 {
+    color: var(--cor-texto-principal);
+    margin-left: 10px;
+}
+
+.categoria p {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    color: var(--cor-texto-principal);
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.diferenciais {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    position: relative;
+    width: 100%;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.carrossel-container {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carrossel-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.carrossel-slide p {
+    position: absolute;
+    font-size: 1.5em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: var(--cor-texto-principal);
+    background-color: color-mix(in srgb, var(--cor-fundo-secundário) 50%, transparent);
+}
+
+.motivacional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    & h1 {
+        font-family: var(--fonte-principal);
+        color: var(--cor-texto-principal);
+        margin: 0;
+    }
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding: 15px;
+    margin: 10px;
+    background-color: color-mix(in srgb, var(--cor-fundo-secundário) 50%, transparent);
+
+    & p {
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--cor-texto-principal);
+        text-align: justify;
+    }
+}
+
+.usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+    & img {
+        width: 80px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 50%;
+        border: 2px solid var(--cor-icones);
+    }
+
+    & h4 {
+        font-family: var(--fonte-principal);
+        color: var(--cor-texto-principal);
+        margin: 0;
+    }
+}
+
+
+
+.area-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.forma-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+        text-decoration: none;
+    }
+    
+    & img {
+        margin: 10px;
+        width: 30px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 35px;
+        background-color: color-mix(in srgb, var(--cor-fundo-secundário) 50%, transparent);
+    }
+    
+    & h2 {
+        font-family: var(--fonte-principal);
+        color: var(--cor-texto-principal);
+        margin: 0;
+    }
+}
+

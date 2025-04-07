@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--Compatibilidade com telas diferentes-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Compatibilidade IE-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cedro Casa Decor</title>
+        <!-- Link para o arquivo CSS -->
+        <link rel="icon" type="image/png" href="imagens/icones/logo-icone.png">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/contato.css">
+        <script src="js/imagem-padrao.js"></script>
+    </head>
+<body>
+    <!--Cabeçalho do site-->
+    <!--Cabeçalho do site-->
+    <header>
+
+        <!--Logo do site-->
+        <div class="logo">
+            <a href="index.html"><img src="imagens/logo.png" alt="Logo Cedro Casa Decor"></a>
+            <div src="texto-logo">
+                <a href="index.html"><h1>Cedro</h1></a>
+                <a href="index.html"><p>CASA DECOR</p></a>
+            </div>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav class="menu-navegacao">
+            <div class="icone-menu-navegacao">
+                <a href="index.html"><img src="imagens/icones/pagina-inicial-icone-preenchido.png" alt="Icone Inicio"></a>
+                <a href="index.html">Início</a>
+            </div>
+            <div class="icone-menu-navegacao">
+                <a href="produtos.html"><img src="imagens/icones/pagina-de-produtos-icone-preenchido.png" alt="Icone Produtos"></a>
+                <a href="produtos.html">Produtos</a>
+            </div>
+            <div class="icone-menu-navegacao">
+                <a href="sobre.html"><img src="imagens/icones/sobre-icone-preenchido.png" alt="Icone Sobre"></a>
+                <a href="sobre.html">Sobre</a>
+            </div>
+            <div class="icone-menu-navegacao">
+                <a href="#"><img src="imagens/icones/contato-icone-preenchido.png" alt="Icone Contato"></a>
+                <a href="#">Contato</a>
+            </div>
+        </nav>
+
+        <!--Area do Usuário-->
+        <div class="area-usuario">
+
+            <div class="carrinho">
+                    <img src="imagens/icones/adicionar-ao-carrinho-icone.png" alt="Icone Carrinho">
+                    <p>Carrinho</p>
+            </div>
+
+            <div class="login">
+                    <img src="imagens/icones/usuario-icone-preenchido.png" alt="Icone Usuario">
+                    <p>Login</p>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="fundo">
+
+        <!--Formulário para entrar em contato-->
+        <div class="container-formulario">
+            <div class="cabecario-formulario">
+                <div>
+                    <img src="imagens/icones/mensagem-icone.png" alt="">
+                    <h1>Fale conosco</h1>
+                </div>
+                <p>Estamos aqui para ajudar! Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+            </div>
+            
+            
+            <form class="formulario">
+                <input id="nome" type="text" placeholder="Seu nome" required />
+                <input id="e-mail" type="email" placeholder="Seu e-mail" required />
+                <input id="assunto" type="text" placeholder="Assunto" />
+                <textarea id="mensagem" placeholder="Sua mensagem..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <!--Informações de contato da Loja-->
+        <div class="informacoes-de-contato">
+            <h1>Informações de Contato</h1>
+
+            <div class="fale-conosco">
+                <div class="info">
+                    <img src="imagens/icones/telefone-icone-preenchido.png" alt="Telefone">
+                    <p>(00) 90000-0000</p>
+                </div>
+                <div class="info">
+                    <img src="imagens/icones/localizacao-icone-preenchido.png" alt="localização">
+                    <p>Subsolo Muffato - Av. Distrito Federal, 1005 - loja 1 - Centro, Paranavaí - PR, 87701-310</p>
+                </div>
+                <div class="info">
+                    <img src="imagens/icones/relogio-icone-preenchido.png" alt="Horário">
+                    <p>Seg a Sab - 9h00 às 19h00</p>
+                    <p>Dom       - 9h00 às 12h00</p>
+                </div>
+            </div>
+
+            <h1>Nossas Redes</h1>
+
+            <!--Redes sociais da Loja-->
+            <div class="nossas-redes">
+                <div class="rede">
+                    <img src="imagens/icones/whatsapp-icone-preenchido-preto.png" alt="WhatsApp">
+                    <a href="https://api.whatsapp.com/send/?phone=554439003344&text&type=phone_number&app_absent=0" class="info">WhatsApp</a>
+                </div>
+                <div class="rede">
+                    <img src="imagens/icones/instagram-icone-preenchido-preto.png" alt="WhatsApp">
+                    <a href="https://www.instagram.com/cedrocasadecor/" class="info">Instagram</a>
+                </div>
+            </div>
+
+            <!--Mapa de localização da Loja-->
+            <div class="container-mapa">
+                <h1>Onde Estamos</h1>
+                <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.246397903241!2d-52.46967946019708!3d-23.088074339365598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949297e8fa7f6475%3A0x8d323b4a78b5967e!2sCedro%20Casa%20Decor!5e0!3m2!1spt-BR!2sbr!4v1743859959384!5m2!1spt-BR!2sbr"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!--Rodapé-->
+    <footer >
+        <div>
+            <p>&copy; 2025 Cedro Casa Decor. Todos os direitos reservados.</p>
+        </div>
+        <div class="links">
+            <a href="https://api.whatsapp.com/send?phone=554439003344" target="_blank"><img src="imagens/icones/whatsapp-icone-preenchido-dourado.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/cedrocasadecor/" target="_blank"><img src="imagens/icones/instagram-icone-preenchido-dourado.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

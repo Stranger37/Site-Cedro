@@ -1,0 +1,74 @@
+/*------------------------------DEFINIÇÕES GLOBAIS------------------------------*/
+
+:root {
+    /*-------------Fontes Utilizadas--------------*/
+
+    /*Define a fonte principal como: Prettywise Light*/
+    --fonte-principal: 'Prettywise Light', sans-serif; /*Logo e Títulos*/
+    /*Define a fonte secundária como: Rotunda Thin*/
+    --fonte-secundária: 'Rotunda Thin', sans-serif; /*Logo e Textos Destaque*/
+    /*Define a fonte textos como: Arial*/
+    --fonte-textos: arial, sans-serif; /*Paragrafos e Descrições*/
+
+    /*-------------Paleta de Cores*--------------/
+
+    /*Define a cor principal do Fundo*/
+    --cor-fundo-principal: #000000; /*Cabeçário e Fundo da Pagina*/
+    /*Define a cor secundaria do Fundo*/
+    --cor-fundo-secundário: #333333; /*Rodapé e Fundos de Elementos na Pagina*/
+    /*Cinza Claro (Linhas finas, bordas)*/
+    --cor-bordas: #e0e0e0;
+    
+    /*Define a Cor Principal*/
+    --cor-titulos: #f6d494; /*Logo, Títulos e Hover de Botões*/
+    /*Define a Cor Secundária*/
+    --cor-icones: #c69c6d; /*Detalhes, Icones e Botões*/
+    /*Define a Cor para Textos*/
+    --cor-texto-principal: #ffffff; /*Parágrafos e Descrições*/
+    /*Define a Cor Principal para Botões de Ação positiva*/
+    --cor-botao-acao: #018520; /*Botões de ação*/
+    /*Define uma cor para o Hover para Botões de Ação*/
+    --cor-botao-acao-claro: #28a745; /*Hover para Botões de Ação*/
+
+    /*--------------Bordas--------------*/
+    --borda: 2px solid black;
+}
+
+/*Fonte principal da Logo Prettywise Light*/
+@font-face {
+    font-family: 'Prettywise Light';
+    src: url("../fonts/prettywise/prettywise-light.ttf") format("truetype"),
+         url("../fonts/prettywise/prettywise-light.woff") format("woff"),
+         url("../fonts/prettywise/prettywise-light.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Fonte seccundária da Logo Rotunda Thin*/
+@font-face {
+    font-family: 'Rotunda Thin';
+    src: url("../fonts/rotunda/rotunda-thin.ttf") format("truetype"),
+         url("../fonts/rotunda/rotunda-thin.woff") format("woff"),
+         url("../fonts/rotunda/rotunda-thin.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*--------------Estilização do Corpo da Página--------------*/
+/*Utilizada em todas as páginas do site*/
+body {
+    font-family: var(--fonte-textos);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.fundo {
+    background-image: url("../imagens/fundo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 20px;
+}

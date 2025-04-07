@@ -1,0 +1,125 @@
+/*------------------------------ORGANIZAÇÃO DO CABEÇÁRIO DA PÁGINA------------------------------*/
+     /*Organiza as divisões dentro do Cabeçário (Logo, Menu Navegação e Área do Usuário)*/
+
+
+/*Organização do Cabeçário (Alinhamentos, Cor, Fundo, Bordas, Organização dos itens internos)*/
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-fundo-principal);
+    border-bottom: 2px solid var(--cor-titulos);
+}
+
+/*Estilização dos Links dentro do Cabeçário (Decoração)*/
+header a{
+    text-decoration: none;
+    color: var(--cor-titulos);
+}
+
+    /*---------------DIVISÃO: LOGO---------------*/
+    /*Organiza os itens dentro do Container Logo*/
+
+/*Organização dos itens dentro do Container da Logo (Posicionamento da Imagem em Relação aos Textos, Espaçamento)*/
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/*Estilização da Imagem da Logo (Tamanho, Margem)*/
+.logo img {
+    width: 50px;
+    height: auto;
+    margin: 5px;
+}
+
+/*Estiliazação do Títuto 'Cedro' na Logo dentro do Cabeçário (Fonte, Cor, Tamanho, Margem e Posicionamento)*/
+.logo h1 {
+    font-family: var(--fonte-principal);
+    color: var(--cor-titulos);
+    font-size: 2.5em;
+    margin: 0;
+    margin-bottom: -15px;
+    margin-left: -20px;
+}
+
+/*Estilização do Sub-Título 'CASA DECOR na Logo dentro do Cabeçário (Fonte, Cor, Tamanho, Magem e Poscionamento)*/
+.logo p {
+    font-family: var(--fonte-textos);
+    color: var(--cor-titulos);
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-left: -20px;
+}
+
+    /*---------------DIVISÃO: MENU DE NAVEGAÇÃO---------------*/
+    /*Organiza os itens dentro do Container Menu de Navegação*/
+
+/*Organização dos itens dentro do Container Menu Navegação (Direcionamento, Posicionamento, Alinhamento, Fundo)*/
+.menu-navegacao {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-fundo-principal);
+    padding: 10px;
+    text-align: center;
+}
+
+/*Organização dos icones no menu de Navegação e do texto (Para que fiquem lado à Lado, Afastados um do outro e centralizados)*/
+.icone-menu-navegacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/*Estilização da Imagem (Icone) do menu (Tamanho e Margem)*/
+.icone-menu-navegacao img{
+    width: 25px;
+    height: auto;
+    margin: 5px;
+}
+
+    /*---------------DIVISÃO: ÁREA DO USUÁRIO---------------*/
+    /*Organiza os itens dentro do Container Área do Usuário*/
+
+/*Organiza os itens dentro do Container (Posiciona corretamente lado à lado os icones e textos)*/
+.area-usuario {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Organiza o icone acima do texto (Mantendo um ao lado do outro dentro da Area do Usuario)
+EX: Icone  Icone
+    Texto  Texto
+*/
+.carrinho, .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
+    gap: 5px;
+}
+
+/*Estilização dos Icones na Area do Usuario (Tamanho, Cursou)*/
+.carrinho img , .login img {
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+/*Estiliazação do Texto na Area do Usuario (Fonte, Cor, Tamanho, Cursor e Margem)*/
+.carrinho p, .login p {
+    margin: 0;
+    font-family: var(--fonte-textos);
+    color: var(--cor-titulos);
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
